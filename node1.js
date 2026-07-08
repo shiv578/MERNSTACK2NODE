@@ -1,6 +1,11 @@
 console.log("Node is working");
-;
 
-const add = require("./server");
+const { add, Person } = require("./server");
+ 
 
-console.log(add(3, 4));
+console.log("Addition =", add(3, 4));
+
+const p1 = new Person("ShivamSwaraj");
+p1.greet();
+
+
