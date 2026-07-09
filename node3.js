@@ -25,4 +25,4 @@ if(fs.existsSync('server.js')){
 }
 else{
     console.log("File not found");
-}
+} // this will check if a file exist or not  
