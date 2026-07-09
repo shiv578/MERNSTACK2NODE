@@ -2,7 +2,7 @@ console.log("Hello from Node");
 
 import { error } from 'console';
 import {appendFile , appendFileSync, unlink } from 'fs';
-appendFile('logs.txt' , "This is a new TXT\n", (error)=>{
+appendFile('log.txt' , "This is a new TXT\n", (error)=>{
 if(error){
     console.log("Error: ",error);
 }
@@ -14,6 +14,6 @@ if(error){
 // wrtie file will overwrite the data  it will remove all the prevous data 
 
 
-unlink("logs.txt" ,(error)=>{
-    console.log("Error: ", error);
-})
+// unlink("logs.txt" ,(error)=>{
+//     console.log("Error: ", error);
+// })  it is used to delete the file 
