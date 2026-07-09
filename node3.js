@@ -1,5 +1,8 @@
 
-import * as fs from 'fs';
+import * as fs from 'fs';// if we are using this import all function then we have to use 
+//fs in front of  every function like fs.rename ,, fs.existSync
+
+
 // mkdir("Trial/ggg" , (error)=>{
 //     console.log("Error making the file");
 // })
