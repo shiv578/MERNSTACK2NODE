@@ -43,7 +43,7 @@ if (req.url === "/video") {
         "Content-Type": "video/mp4",
     });
 
-    createReadStream(videoPath, {
+     createReadStream(videoPath, {
         start,
         end,
        }).pipe(res);  
