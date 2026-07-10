@@ -46,7 +46,7 @@ if (req.url === "/video") {
     createReadStream(videoPath, {
         start,
         end,
-     }).pipe(res);  
+       }).pipe(res);  
 }
 });
 
