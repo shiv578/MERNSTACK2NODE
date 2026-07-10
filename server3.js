@@ -39,7 +39,7 @@ if (req.url === "/video") {
     res.writeHead(206, {
         "Content-Range": `bytes ${start}-${end}/${fileSize}`,
           "Accept-Ranges": "bytes",
-        "Content-Length": contentLength,
+           "Content-Length": contentLength,
         "Content-Type": "video/mp4",
     });
 
