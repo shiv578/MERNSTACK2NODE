@@ -11,17 +11,24 @@ console.log(__dirname);
 
 const server = createServer((req, res) => {
     if (req.url === "/") {
+        //
     const htmlPath = join(__dirname, "index.html");
+            //it reads the file in small chunks rather tan loading the while file into the memory
+
         createReadStream(htmlPath).pipe(res);
+        //pipe
+        //pipe connects one steam to another by sending the file to the http directly in response
         return;
     }
 if (req.url === "/video") {
+  //   
     const videoPath = join(__dirname, "Content", "videos", "myvideo.mp4");
 
     const stat = statSync(videoPath);
     const fileSize = stat.size;
 
     const range = req.headers.range;
+    //gets the range header send by the browser
 
     if (!range) {
         res.writeHead(400);
