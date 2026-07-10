@@ -28,3 +28,9 @@ app.listen(3000 , ()=>{
 })
 
 //rest api   it is the way to communicate over the interesr usinf the http method 
+
+
+// this is normal function we can use chaning in this also so we dont have to write all 
+// that app .use any thing again anf again
+// we can use or just write the . get  . out . patch like this 
+// this is called the chaning method
