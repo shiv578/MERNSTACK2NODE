@@ -23,7 +23,8 @@ app.patch("/" , (req,res)=>{
     res.send("using patch");
 })
 
-app.listen(3000 , ()=>{
+app.listen(3000 , ()=>{ 
     console.log("server is running..!!")
 })
+
 //rest api   it is the way to communicate over the interesr usinf the http method 
