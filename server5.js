@@ -10,5 +10,6 @@ import express from 'express';
  });
 
  app.listen(PORT , '127.0.0.1', ()=>{
+    
     console.log(`node is running on local host: ${PORT}`);
  })
