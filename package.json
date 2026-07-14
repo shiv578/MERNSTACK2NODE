@@ -12,6 +12,7 @@
   "dependencies": {
     "express": "^5.2.1",
     "mongoose": "^9.7.4",
-    "mongosh": "^2.9.2"
+    "mongosh": "^2.9.2",
+    "v4": "^0.0.1"
   }
 }
