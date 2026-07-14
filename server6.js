@@ -62,6 +62,7 @@ email: req.body.email,
   .delete('/' , (req , res)=>{
 
     
+
  await User.delete({})
 
  res.status(200).json({
