@@ -4,6 +4,7 @@ const router =  express.Router();
 
 router.get('/Products' , (req, res)=>{
     res.send(`products Page ${req.method}`); 
+
     
 })
 .post('/Products' ,(req,res)=>{
