@@ -51,15 +51,17 @@ await User.findOneAndUpdate({
 {
 name: req.body.name ,
 age: req.body.age,
+
 email: req.body.email,
 
 
 }
 )
     
- })//we will put  or update the data using id up data a particular data
+ })//we will put  or update the   data using id up data a particular data
  
   .delete('/' , (req , res)=>{
+
 
     
 
