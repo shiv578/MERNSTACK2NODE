@@ -17,6 +17,7 @@ res.send(`${req.method} is called...`);
 
 
   .get('/:id' , (req , res)=>{
+    
 res.send(`${req.method} is called...`);
  })//it will also fetch documenet but only a single document matching the id that is givern
 
