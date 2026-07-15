@@ -1,13 +1,13 @@
-const { connect } = require("mongoose");
+import mongoose from "mongoose";
 
 const connectDb = async () => {
     try {
-        await connect("mongodb://localhost:27017/students");
-        console.log("Database is connected...");
+        await mongoose.connect("mongodb://localhost:27017/students");
+        console.log("Database connected...");
     } catch (error) {
         console.error(error);
         process.exit(1);
     }
 };
 
-module.exports = connectDb;
+export default connectDb;
